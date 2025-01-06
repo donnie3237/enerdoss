@@ -10,30 +10,66 @@ const frameworks: Array<CompatibilityItem> = [
     url: "https://reactjs.org/",
   },
   {
-    title: "Preact",
-    icon: "frameworks/preact",
+    title: "Solid",
+    icon: "frameworks/solid",
     url: "https://preactjs.com/",
   },
   {
-    title: "Svelte",
+    title: "Svelte/kit",
     icon: "frameworks/svelte",
     url: "https://svelte.dev/",
   },
   {
-    title: "Vue",
-    icon: "frameworks/vue",
+    title: "Tauri",
+    icon: "simple-icons:tauri",
     url: "https://vuejs.org/",
   },
   {
-    title: "Solid",
-    icon: "frameworks/solid",
+    title: "Next",
+    icon: "simple-icons:nextdotjs",
+    url: "https://vuejs.org/",
+  },
+
+  {
+    title: "Astro",
+    icon: "simple-icons:astro",
     url: "https://www.solidjs.com/",
   },
+
+];
+const Api: Array<CompatibilityItem> = [
   {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
+    title: "Express",
+    icon: "simple-icons:express",
+    url: "https://reactjs.org/",
   },
+  {
+    title: "Hono",
+    icon: "simple-icons:hono",
+    url: "https://preactjs.com/",
+  },
+  {
+    title: "Actix/Axum",
+    icon: "simple-icons:actix",
+    url: "https://svelte.dev/",
+  },
+  {
+    title: "Fiber",
+    icon: "simple-icons:go",
+    url: "https://vuejs.org/",
+  },
+  {
+    title: "PostgreSQL",
+    icon: "simple-icons:postgresql",
+    url: "https://vuejs.org/",
+  },
+
+  {
+    title: "MongoDB",
+    icon: "simple-icons:mongodb",
+    url: "https://www.solidjs.com/",
+  },
+
 ];
 
 const platforms: Array<CompatibilityItem> = [
@@ -53,8 +89,8 @@ const platforms: Array<CompatibilityItem> = [
     url: "https://pages.cloudflare.com/",
   },
   {
-    title: "Render",
-    icon: "platforms/render",
+    title: "Docker",
+    icon: "fa-brands:docker",
     url: "https://render.com/",
   },
   {
@@ -70,15 +106,19 @@ const platforms: Array<CompatibilityItem> = [
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
+<ContentSection title="Make it your own" id="solution">
   <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
-    <span class="text-primary">framework</span>
-    and deploy to your favorite <span class="text-primary">platform</span>.
+    Useful <span class="text-primary">Software</span>. With your Idea{" "}
+    and deploy to your favorite <span class="text-primary">platform</span>. start at $200 with customized tech stack.
   </Fragment>
   <CompatibilityList
     items={frameworks}
     title="Frameworks"
+    url="https://docs.astro.build/core-concepts/framework-components/"
+  />
+  <CompatibilityList
+    items={Api}
+    title="Api services"
     url="https://docs.astro.build/core-concepts/framework-components/"
   />
   <CompatibilityList
